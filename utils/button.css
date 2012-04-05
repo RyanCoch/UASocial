@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+
+.checkbox, .radio {
+	width: 19px;
+	height: 25px;
+	padding: 0 5px 0 0;
+	background: url(../images/checkbox.png) no-repeat;
+	display: inline-block;
+	position:relative;
+	top:8px;
+}
+.styled2 {
+	background: url(../images/checkbox2.png) no-repeat;
+}
+.styled3 {
+	background: url(../images/checkbox3.png) no-repeat;
+}
+.radio {
+	background: url(../images/radio.png) no-repeat;
+}
+
+
+button{
+    display:block;
+    margin:10px 7px 0 0;
+    border:1px solid #333;
+    border-top:1px solid #eee;
+    border-left:1px solid #eee;
+
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:.85em;
+    text-decoration:none;
+    font-weight:bold;
+    color:#930;
+    cursor:pointer;
+	height:30px;
+}
+button{
+    width:auto;
+    overflow:visible;
+    padding:2px 10px 2px 7px; /* IE6 */
+}
+button[type]{
+    padding:2px 10px 2px 7px; /* Firefox */
+    line-height:17px; /* Safari */
+}
+*:first-child+html button[type]{
+    padding:4px 10px 3px 7px; /* IE7 */
+}
+
+/* PICTURE */
+
+.tpic{
+	border: 1px solid #930;
+	background: #ffe8d1;
+	color: #000;
+}
+.tpic:focus{
+	border: 1px solid #930;
+	background: #fff9e2;
+	color: #000;
+}
+button.bpicture {
+    float:right;
+    background-color:#ffe8d1;
+    color:#930;
+}
+button.bpicture:hover{
+    background-color:#930;
+    border:1px solid #ffe8d1;
+    color:#fff;
+}
+button.bpicture:active{
+    background-color:#930;
+    border:1px solid #ffe8d1;
+    color:#fff;
+}
+
+/* SETTINGS*/
+.tsettings{
+	border: 1px solid #9cf;
+	background: #e0effd;
+	color: #000;
+}
+.tsettings:focus{
+	border: 1px solid #9cf;
+	background: #f0f7fd;
+	color: #000;
+}
+button.bsettings {
+    background-color:#c7e3ff;
+    color:#000;
+	display:inline-block;
+}
+button.bsettings:hover{
+    background-color:#9cf;
+    border:1px solid #9cf;
+    color:#fff;
+}
+button.bsettings:active{
+    background-color:#9cf;
+    border:1px solid #9cf;
+    color:#fff;
+}
+
+/* MAIL */
+.tmail{
+	border: 1px solid #b9e38e;
+	background: #dffdc1;
+	color: #000;
+}
+.tmail:focus{
+	border: 1px solid #b9e38e;
+	background: #f1ffe2;
+	color: #000;
+}
+button.bmail {
+    background-color:#dffdc1;
+    color:#000;
+}
+button.bmail:hover{
+    background-color:#b9e38e;
+    border:1px solid #b9e38e;
+    color:#fff;
+}
+button.bmail:active{
+    background-color:#b9e38e;
+    border:1px solid #b9e38e;
+    color:#fff;
+}
+
+/* SEARCH */
+.tsearch {
+	border: 1px solid #fc0;
+	background: #ffeda4;
+	color: #000;
+}
+.tsearch:focus{
+	border: 1px solid #fc0;
+	background: #ffe;
+	color: #000;
+}
+button.bsearch {
+    background-color:#fef5d0;
+    color:#000;
+	display:inline-block;
+}
+button.bsearch:hover{
+    background-color:#fc0;
+    border:1px solid #fc0;
+    color:#fff;
+}
+button.bsearch:active{
+    background-color:#fc0;
+    border:1px solid #fc0;
+    color:#fff;
+}

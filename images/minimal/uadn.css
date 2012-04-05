@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document MINIMAL*/
+
+
+body {background:url(fon.png) repeat-x #ffffff;}
+
+#upper #topmenu p.topmenu a {color: #ddd;}
+#upper #topmenu p.topmenu a:hover {color: #fff; background-color: #999; }
+
+#left h2.name {color:#333;}
+#left h2 {color:#333;}
+#left h3 {color:#333;}
+
+span.online {background:url(online.png) no-repeat top left;}
+span.offline {background:url(offline.png) no-repeat top left;}
+
+ul.leftmenu li.one a, ul.leftmenu li.two a, ul.leftmenu li.three a, ul.leftmenu li.four a, ul.leftmenu li.five a, ul.leftmenu li.grey a {background-color:#ccc;border-color:#ccc; }
+ul.leftmenu li.one a:hover, ul.leftmenu li.two a:hover, ul.leftmenu li.three a:hover, ul.leftmenu li.four a:hover, ul.leftmenu li.five a:hover, ul.leftmenu li.grey a:hover {background-color:#fff; border-top:#ccc 2px solid;border-left:#ccc 2px solid;border-bottom:#ccc 2px solid;}
+
+ul.leftmenu li.orange a {background-color:#999;border-color:#999; }
+ul.leftmenu li.orange a:hover {background-color:#fff;color:#000; border-top:#999 2px solid;border-left:#999 2px solid;border-bottom:#999 2px solid;}
+
+#profile h2 {color:#333;}
+#profile h3 {color:#333;}
+#profile h3.about {color:#444;}
+
+#profile small a {color:#333}
+#profile small a:hover {color:#fff; background-color:#666;}
+
+div.uno {border:#666 2px solid;}
+div.match {background-repeat:repeat-y; background-image:url(search_bg.png);}
+div.uno a.name {color:#333;}
+div.uno a.name:hover {color:#fff; background-color:#666;}
+
+div.duo {border:#666 2px solid;}
+div.duo a.name {color:#333;}
+div.duo a.name:hover {color:#fff; background-color:#666;}
+
+div.bar { background-color:#999;}
+div.bar a.active {background-color:#eee;}
+
+#profile a.fb {color:#333;}
+#profile a.fb:hover {background-color:#666;} 
+
+#bar a {color:#333; background-color:#eee;}
+#bar a:hover {color:#fff; background-color:#666;}
+
+#bottom p {color: #333;}
+#bottom a {color: #333;}
+#bottom a:hover {color: #999; }
+
+/* PICTURES */
+
+span.upper_bar a {color:#000; background-color:#ddd;}
+span.upper_bar a:hover {color:#fff; background-color:#666;}
+
+#beautiful_pic {background-color:#ddd;}
+
+#beautiful_pic2 a {border:#666 2px solid; color: #333;}
+#beautiful_pic2 a.act {border:#999 2px solid; }
+#beautiful_pic2 a:hover {border:#999 2px solid; }
+
+div.pic {border:#eee 2px solid;}
+div.pic:hover {border:#ddd 2px solid;}
+div.pic img {border:#333 1px solid;}
+
+#profile #picturebar img {border:#333 1px solid;}
+#profile #picturebar img:hover {border:#999 1px solid;}
+
+/* MESSAGES */
+
+div.bar2 { background-color:#eee;}
+
+#beautiful_msg {background-color:#eee;}
+#beautiful_msg2 {border:#ddd 2px solid;}
+
+#beautiful_msg3 span.right {border:#ddd 1px solid;}
+#beautiful_msg3 span.msg {border:#ddd 1px solid; background-color:#eee;}
+
+table {font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size: .85em; width:550px; padding:0; margin:0;}
+table th {background-color:#ccc;}
+table tr.new {background-color:#ddd;}
+table tr.old {background-color:#eee;}
+table td.type1 {background-image:url(msg_msg.png);}
+table td.type2 {background-image:url(msg_smile.png);}
+table td.type3 {background-image:url(report.png);}
+
+/* NEW HERE BLOCK */
+
+#newhere a {color:#666;}
+#newhere img { border:#666 1px solid;}
+#newhere span {color:#333; border-bottom:#000 1px solid;}

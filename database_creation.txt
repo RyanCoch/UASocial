@@ -1,0 +1,94 @@
+
+DATABASE CREATION PROCEDURE
+
+
+CREATE TABLE IF NOT EXISTS `profile` (
+  `uid` int(11) NOT NULL AUTO_INCREMENT,
+  `active` int(11) NOT NULL DEFAULT '0' COMMENT '0 or key number',
+  `email` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `password` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `name` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `sex` tinyint(4) NOT NULL,
+  `picture` varchar(255) NOT NULL,
+  `major` varchar(50) CHARACTER SET latin1 COLLATE latin1_general_ci NOT NULL,
+  `pob` varchar(50) NOT NULL,
+  `pob_flag` tinyint(4) NOT NULL DEFAULT '1',
+  `dob` date NOT NULL,
+  `dob_flag` tinyint(4) NOT NULL DEFAULT '0',
+  `headline` varchar(50) NOT NULL,
+  `about` text NOT NULL,
+  `quad` int(11) NOT NULL,
+  `quad_flag` tinyint(4) NOT NULL DEFAULT '0',
+  `life_prior` varchar(10) NOT NULL,
+  `look_for` tinyint(4) NOT NULL DEFAULT '3',
+  `look_age_from` tinyint(4) NOT NULL,
+  `look_age_to` tinyint(4) NOT NULL,
+  `look_what` varchar(50) NOT NULL,
+  `foreign_lang` varchar(50) NOT NULL,
+  `body` tinyint(4) NOT NULL,
+  `tattoo` tinyint(4) NOT NULL,
+  `haircolor` tinyint(4) NOT NULL,
+  `alcohol` varchar(50) NOT NULL,
+  `status` int(4) NOT NULL COMMENT '0 or key number',
+  `last_login` date NOT NULL,
+  `last_login_ip` varchar(19) NOT NULL,
+  `registered` date NOT NULL COMMENT 'registration date',
+  `css` tinyint(4) NOT NULL COMMENT 'Color scheme',
+  `facebook` varchar(255) NOT NULL,
+  `gplus` varchar(255) NOT NULL,
+  `twitter` varchar(255) NOT NULL,
+  `sorfer` varchar(50) NOT NULL,
+  `chat_color` tinyint(4) NOT NULL,
+  UNIQUE KEY `uid` (`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+
+
+CREATE TABLE IF NOT EXISTS `pic_com` (
+  `cid` int(11) NOT NULL AUTO_INCREMENT,
+  `pic_id` int(11) NOT NULL,
+  `uid` int(11) NOT NULL,
+  `type` tinyint(4) NOT NULL,
+  `comment` varchar(255) NOT NULL,
+  `datetime` datetime NOT NULL,
+  PRIMARY KEY (`cid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+
+
+CREATE TABLE IF NOT EXISTS `picture` (
+  `pic_id` int(11) NOT NULL AUTO_INCREMENT,
+  `uid` int(11) NOT NULL,
+  `picture` varchar(255) NOT NULL,
+  `text` varchar(255) NOT NULL,
+  `type` int(11) NOT NULL,
+  UNIQUE KEY `pic_id` (`pic_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+
+
+CREATE TABLE IF NOT EXISTS `online` (
+  `uid` int(11) NOT NULL,
+  `time` bigint(20) NOT NULL,
+  `type` tinyint(4) NOT NULL DEFAULT '0' COMMENT '0 - on line, 1 - on line in chat',
+  UNIQUE KEY `uid` (`uid`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+CREATE TABLE IF NOT EXISTS `message` (
+  `mid` int(11) NOT NULL AUTO_INCREMENT COMMENT 'message id',
+  `from_uid` int(11) NOT NULL,
+  `to_uid` int(11) NOT NULL,
+  `didread` tinyint(4) NOT NULL DEFAULT '0',
+  `subject` varchar(255) NOT NULL,
+  `text` text NOT NULL,
+  `type` tinyint(4) NOT NULL DEFAULT '1' COMMENT 'message(1) or smile(2) or report(3)',
+  `disp_s` tinyint(4) NOT NULL DEFAULT '1' COMMENT 'display to sender',
+  `disp_r` tinyint(4) NOT NULL DEFAULT '1' COMMENT 'display to reciever',
+  `datetime` datetime NOT NULL,
+  UNIQUE KEY `mid` (`mid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 ;
+
+
+CREATE TABLE IF NOT EXISTS `block` (
+  `user1` int(11) NOT NULL,
+  `user2` int(11) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+

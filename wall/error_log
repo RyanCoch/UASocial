@@ -1,0 +1,11 @@
+[02-Dec-2011 13:12:29] PHP Warning:  include_once(/utils/functions.php) [<a href='function.include-once'>function.include-once</a>]: failed to open stream: No such file or directory in /home/uasocial/public_html/wall/delete.php on line 10
+[02-Dec-2011 13:12:29] PHP Warning:  include_once() [<a href='function.include'>function.include</a>]: Failed opening '/utils/functions.php' for inclusion (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/uasocial/public_html/wall/delete.php on line 10
+[02-Dec-2011 13:12:29] PHP Fatal error:  Call to undefined function  encode() in /home/uasocial/public_html/wall/delete.php on line 13
+[08-Dec-2011 17:30:09] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 11
+[08-Dec-2011 17:30:45] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 11
+[08-Dec-2011 18:26:15] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 12
+[08-Dec-2011 18:26:18] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 12
+[08-Dec-2011 18:26:20] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 12
+[08-Dec-2011 18:26:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 12
+[08-Dec-2011 18:26:23] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 12
+[08-Dec-2011 18:26:25] PHP Warning:  mysql_fetch_array(): supplied argument is not a valid MySQL result resource in /home/uasocial/public_html/wall/loadcomment.php on line 12
